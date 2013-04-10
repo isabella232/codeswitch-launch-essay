@@ -350,23 +350,18 @@ button {
 /* ============================================= */
 @media (min-width: 900px) {
   .intro-cover {
-    background-image: url(../_img/content/story/william-bw.jpg);
-    height: 700px;
-  }
-
-  #ch1-intro {
-    background-image: url(../_img/content/story/aztec_closeup.jpg);
-    height: 900px;
+    background-image: url(../_img/content/story/harlem_shake-cropped-md.jpg);
+    height: 750px;
   }
 
   #ch2-intro {
-    background-image: url(../_img/content/story/aztec_closeup.jpg);
-    height: 1000px;
+    background-image: url(../_img/content/story/first_friday.jpg);
+    height: 750px;
   }
 
   #ch3-intro {
-    background-image: url(../_img/content/story/mural.jpg);
-    height: 1000px;
+    background-image: url(../_img/content/story/doorway-face-md.jpg);
+    height: 800px;
   }
 }
 /* ============================================= */
