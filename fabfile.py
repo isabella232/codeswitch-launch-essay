@@ -6,7 +6,7 @@ import os
 from fabric.api import *
 
 import app_config
-
+from etc import github
 
 """
 Base configuration
@@ -111,26 +111,10 @@ def _confirm(message):
         exit()
 
 
-def nuke_confs():
-    """
-    DESTROYS rendered server configurations from the specified server.
-    This will reload nginx and stop the uwsgi config.
-    """
-    require('settings', provided_by=[production, staging])
-
-    for service, remote_path in SERVICES:
-        with settings(warn_only=True):
-            service_name = '%s.%s' % (app_config.PROJECT_SLUG, service)
-            file_name = '%s.conf' % service_name
-
-            if service == 'nginx':
-                sudo('rm -f %s%s' % (remote_path, file_name))
-                sudo('service nginx reload')
-
-            else:
-                sudo('service %s stop' % service_name)
-                sudo('rm -f %s%s' % (remote_path, file_name))
-                sudo('initctl reload-configuration')
+def bootstrap_issues():
+    auth = github.get_auth()
+    github.create_default_labels(auth)
+    github.create_default_tickets(auth)
 
 
 def shiva_the_destroyer():
