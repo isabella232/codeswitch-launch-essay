@@ -71,9 +71,10 @@
 							</div>
 
 							<ul class="toc-sections toc-anchors">
-								<li><a href="#ch1">Chapter 1</a></li>
-								<li><a href="#ch2">Chapter 2</a></li>
-								<li><a href="#ch3">Chapter 3</a></li>
+                                <li><a rel="external" href="http://twitter.com/share?text={{ TWITTER.TEXT|urlencode }}&amp;url={{ TWITTER.URL|urlencode }}" alt="Share on Twitter" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social', 'Click Twitter In Navbar', '{{ PROJECT_NAME }}']);">Share This Page On Twitter</a>
+                                </li>
+                                <li><a rel="external" href="https://www.facebook.com/dialog/feed?app_id={{ FACEBOOK.APP_ID }}&amp;link={{ FACEBOOK.URL|urlencode }}&amp;name={{ FACEBOOK.TITLE|urlencode }}&amp;picture={{ FACEBOOK.IMAGE_URL|urlencode }}&amp;redirect_uri={{ FACEBOOK.URL|urlencode }}" alt="Share on Facebook" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social', 'Click Facebook In Navbar', '{{ PROJECT_NAME }}']);">Like This Page On Facebook</a>
+                                </li>
 							</ul>
 						</nav><!-- toc -->
 					</div><!-- title -->
