@@ -147,12 +147,12 @@ $(document).ready(function() {
 
 	//If you want the cover title to appear at the bottom
 	if(windowW>900){
-		CoverBottom();
+		// CoverBottom();
 	}
 
 	$(window).resize(function(){
 		if(windowW>900){
-			CoverBottom();
+			// CoverBottom();
 		} else  {
 			ResetTop();
 		}
@@ -169,8 +169,8 @@ $(document).ready(function() {
 
 			if($(this).scrollTop()<=0){
 				ResetTop();
-				CoverBottom();
+				// CoverBottom();
 			}
 		}
-	});
+	}); 
 });

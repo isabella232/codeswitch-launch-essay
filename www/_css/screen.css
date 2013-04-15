@@ -350,18 +350,18 @@ button {
 /* ============================================= */
 @media (min-width: 900px) {
   .intro-cover {
-    background-image: url(../_img/content/story/harlem_shake-cropped-md.jpg);
-    height: 750px;
+    background-image: url(../_img/content/story/harlem_shake.jpg);
+    height: 1000px;
   }
 
   #ch2-intro {
     background-image: url(../_img/content/story/first_friday.jpg);
-    height: 750px;
+    height: 1000px;
   }
 
   #ch3-intro {
-    background-image: url(../_img/content/story/doorway-face-md.jpg);
-    height: 800px;
+    background-image: url(../_img/content/story/dumbfoundead_concert.jpg);
+    height: 1000px;
   }
 }
 /* ============================================= */
