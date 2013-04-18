@@ -524,6 +524,7 @@ p {
     width: 200px;
     float: right;
     display: block;
+    line-height: 1.3;
   }
 }
 
