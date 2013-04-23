@@ -791,7 +791,7 @@ figcaption:after {
 @media (min-width: 900px) {
   #logo {
     position: fixed;
-    z-index: 100;
+    z-index: 10001;
   }
 }
 #logo {
