@@ -634,6 +634,7 @@ p {
 
 .kicker {
   color: #7598c9;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
@@ -641,6 +642,11 @@ p {
   font-size: 1.4em;
   padding: 10px 0;
   font-weight: normal;
+}
+
+.date {
+  font-size: 1.1em;
+  color: #999;
 }
 
 .byline {
@@ -781,6 +787,22 @@ figcaption:after {
 /* ============================================= */
 /*	6. Navigation					   			 */
 /* ============================================= */
+
+@media (min-width: 900px) {
+  #logo {
+    position: fixed;
+    z-index: 100;
+  }
+}
+#logo {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#logo img {
+  width: 69px;
+}
+
 .toc {
   font-family: Georgia, Times, Times New Roman, serif;
   *zoom: 1;
@@ -1029,6 +1051,12 @@ figcaption:after {
 .title {
   text-align: left;
   padding: 20px 0;
+}
+
+@media (max-width: 600px){
+  .title {
+    padding: 0 0 20px;
+  }
 }
 
 /* ============================================= */
